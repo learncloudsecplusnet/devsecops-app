@@ -1,0 +1,27 @@
+<<project>
+    ...
+    <build>
+        ...
+        <plugins>
+            ...
+            <plugin>
+              <groupId>org.owasp</groupId>
+              <artifactId>dependency-check-maven</artifactId>
+              <version>3.2.1</version>
+              <configuration>
+                  <failBuildOnCVSS>1</failBuildOnCVSS>
+              </configuration>
+              <executions>
+                  <execution>
+                      <goals>
+                          <goal>check</goal>
+                      </goals>
+                  </execution>
+              </executions>
+            </plugin>
+            ...
+        </plugins>
+        ...
+    </build>
+    ...
+</project>
