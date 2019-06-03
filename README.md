@@ -27,3 +27,17 @@ docker run `
   -v $HOME`:/home `
   jenkinsci/blueocean
 ```
+
+## Install Jenkins Container on Linux
+
+* Open Terminal, copy and paste the command below to install:
+```
+docker run \
+  --rm \
+  -u root \
+  -p 8080:8080 \
+  -v jenkins-data:/var/jenkins_home \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v "$HOME":/home \
+  jenkinsci/blueocean
+```
