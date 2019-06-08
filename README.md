@@ -32,7 +32,7 @@ docker run `
 
 * Open Terminal, copy and paste the command below to install:
 ```
-docker run \
+sudo docker run \
 --rm \
 --dns 8.8.8.8 \
 -u root \
