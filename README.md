@@ -33,12 +33,12 @@ docker run `
 * Open Terminal, copy and paste the command below to install:
 ```
 docker run \
-  --rm \
-  --dns 8.8.8.8 \
-  -u root \
-  -p 8080:8080 \
-  -v jenkins-data:/var/jenkins_home \
-  -v /var/run/docker.sock:/var/run/docker.sock \
-  -v "$HOME":/home \
-  jenkinsci/blueocean
+--rm \
+--dns 8.8.8.8 \
+-u root \
+-p 8080:8080 \
+-v jenkins-data:/var/jenkins_home \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v "$HOME":/home \
+jenkinsci/blueocean
 ```
