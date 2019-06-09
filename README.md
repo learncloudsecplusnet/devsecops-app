@@ -34,7 +34,6 @@ docker run `
 ```
 sudo docker run \
 --rm \
---dns 8.8.8.8 \
 -u root \
 -p 8080:8080 \
 -v jenkins-data:/var/jenkins_home \
