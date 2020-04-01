@@ -20,7 +20,6 @@ pipeline {
                     junit 'target/surefire-reports/*.xml'
                 }
             }
-        }
         stage('Maven Dependency Check') {
             steps {
                 sh 'mvn verify'
